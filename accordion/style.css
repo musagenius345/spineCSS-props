@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  gap: 1rem;
+}
+
+
+
+.accordion-header {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  border: 1px solid #ddd;
+}
+
+.accordion-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url('plus.png') center center no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.accordion.active .accordion-icon {
+  background: url('minus.png') center center no-repeat;
+  background-size: contain;
+}
+
+.accordion.active .accordion-content {
+  display: block;
+}
